@@ -33,3 +33,7 @@ body {
 	background-color:#003366;
 	border-color:#336699;
 }
+.node.inactive.prize {
+	background-color:#006666;
+	border-color:#339999;
+}

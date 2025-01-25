@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+		<meta charset="utf-8"/>
+		<title>Skill Tree</title>
+	</head>
+	<body>
+		<div id="div_inputParameters">
+			<table>
+				<tr>
+					<td style="text-align:right;"><label for="input_totalCards">Total cards:</label></td>
+					<td><input id="input_totalCards" value="200" type="number" min="1" max="10000" step="1"></td>
+				</tr>
+				<tr>
+					<td style="text-align:right;"><label for="input_gridSize">Grid size:</label></td>
+					<td><input id="input_gridSize" value="9" type="number" min="3" max="35" step="2"></td>
+				</tr>
+				<tr>
+					<td style="text-align:right;"><label for="input_prizes">Prizes:</label></td>
+					<td><input id="input_prizes" value="20" type="number" min="4" max="100" step="4"></td>
+				</tr>
+			</table>
+			<br>
+			<button onClick="SkillTree.processInput()">Generate tree</button>
+		</div>
+		<table id="table_tree"></div>
+		<script type="text/javascript" src="src/alemaninc_utility.js" defer></script>
+		<script type="text/javascript" src="src/main.js" defer></script>
+	</body>
+</html>
